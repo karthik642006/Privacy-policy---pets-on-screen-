@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Pets On Screen</title>
+
   <style>
     :root {
       --bg: #f5f6f8;
@@ -25,7 +27,8 @@
       padding: 32px 16px 64px;
       background-color: var(--bg);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Inter, Helvetica, Arial, sans-serif;
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
@@ -121,7 +124,8 @@
     }
 
     code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, monospace;
       font-size: 13px;
       background: var(--bg);
       border: 1px solid var(--border);
@@ -148,95 +152,193 @@
     }
   </style>
 </head>
+
 <body>
   <main>
     <span class="badge">Privacy Policy</span>
+
     <h1>Pets On Screen</h1>
+
     <p class="meta">
-      Package Name: <code>com.petsonscreen.app</code> &middot; Effective Date: November 20, 2026
+      Effective Date: November 20, 2026
     </p>
 
     <div class="summary-box">
       <strong>Summary</strong>
-      Pets On Screen runs locally on your device. We do not require account sign-in, do not include ads or analytics trackers, and do not collect, sell, or transmit your personal data to external servers.
+      Pets On Screen runs locally on your device. We do not require
+      account sign-in, do not include ads or analytics trackers, and
+      do not collect, sell, or transmit your personal data to external
+      servers.
     </div>
 
     <h2>1. Overview</h2>
     <p>
-      This Privacy Policy explains how <strong>Pets On Screen</strong> (<code>com.petsonscreen.app</code>) handles information when you use the Android application. By installing or using Pets On Screen, you agree to the practices described in this policy.
+      This Privacy Policy explains how <strong>Pets On Screen</strong>
+      handles information when you use the Android application.
+      By installing or using Pets On Screen, you agree to the
+      practices described in this policy.
     </p>
 
     <h2>2. Information We Collect &amp; Local Storage</h2>
+
     <p>
-      Pets On Screen does <strong>not</strong> collect personally identifiable information, does not use third-party advertising networks, and does not use third-party analytics SDKs.
+      Pets On Screen does <strong>not</strong> collect personally
+      identifiable information, does not use third-party advertising
+      networks, and does not use third-party analytics SDKs.
     </p>
+
     <p>
-      All app settings and content stay strictly on your device inside app-private storage (<code>SharedPreferences</code> and internal app files):
+      All app settings and content stay on your device inside
+      app-private storage (<code>SharedPreferences</code> and
+      internal app files):
     </p>
+
     <ul>
-      <li><strong>Companion Preferences:</strong> Your 9-slot Companion Roster selections, active companion count, movement speed, companion scale, rotation interval, and overlay toggle state.</li>
-      <li><strong>Command Conversation History:</strong> Text commands you enter or dictate in Settings and the companion replies (up to the most recent 20 turns), stored locally so you can review or clear them at any time.</li>
-      <li><strong>Imported Custom Shimeji Packs:</strong> If you choose to import a custom Shimeji <code>.zip</code> sprite pack, the PNG frames are extracted locally into app-private storage on your device.</li>
+      <li>
+        <strong>Companion Preferences:</strong>
+        Your 9-slot Companion Roster selections, active companion
+        count, movement speed, companion scale, rotation interval,
+        and overlay toggle state.
+      </li>
+
+      <li>
+        <strong>Command Conversation History:</strong>
+        Text commands you enter or dictate in Settings and companion
+        replies (up to the most recent 20 turns), stored locally so
+        you can review or clear them at any time.
+      </li>
+
+      <li>
+        <strong>Imported Custom Shimeji Packs:</strong>
+        If you choose to import a custom Shimeji
+        <code>.zip</code> sprite pack, the PNG frames are extracted
+        locally into app-private storage on your device.
+      </li>
     </ul>
 
     <h2>3. Device Permissions &amp; Why They Are Requested</h2>
+
     <p>
-      Pets On Screen requests only the Android permissions needed for its desktop companion features:
+      Pets On Screen requests only the Android permissions needed
+      for its desktop companion features:
     </p>
+
     <ul>
       <li>
-        <strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong>
-        Used solely to draw interactive animated companions on top of other apps when you enable the floating overlay. Pets On Screen does not read, capture, log, or monitor screen content, passwords, or keystrokes from other apps. You can use the in-app companion stage without granting this permission.
+        <strong>Display Over Other Apps
+        (<code>SYSTEM_ALERT_WINDOW</code>):</strong>
+        Used solely to draw interactive animated companions on top
+        of other apps when you enable the floating overlay.
+        Pets On Screen does not read, capture, log, or monitor
+        screen content, passwords, or keystrokes from other apps.
+        You can use the in-app companion stage without granting
+        this permission.
       </li>
+
       <li>
-        <strong>Microphone / Record Audio (<code>RECORD_AUDIO</code>, Optional):</strong>
-        Requested only if you tap the <em>Talk</em> button in Settings to speak companion commands (such as <em>walk</em>, <em>jump</em>, <em>sit</em>, <em>hide</em>, or <em>show</em>). Voice input is processed through your device's system speech recognition service (<code>SpeechRecognizer</code>). Pets On Screen does not record, save, or upload raw audio files.
+        <strong>Microphone / Record Audio
+        (<code>RECORD_AUDIO</code>, Optional):</strong>
+        Requested only if you tap the <em>Talk</em> button in Settings
+        to speak companion commands. Voice input is processed through
+        your device's system speech recognition service
+        (<code>SpeechRecognizer</code>).
+        Pets On Screen does not record, save, or upload raw audio files.
       </li>
+
       <li>
-        <strong>Notifications &amp; Foreground Service (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong>
-        Used to display the persistent status notification required by Android while desktop companions are active over other apps, giving you instant <em>Show/Hide</em> and <em>Stop</em> controls.
+        <strong>Notifications &amp; Foreground Service
+        (<code>POST_NOTIFICATIONS</code>,
+        <code>FOREGROUND_SERVICE</code>,
+        <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong>
+        Used to display the persistent status notification required
+        by Android while desktop companions are active over other apps,
+        giving you instant <em>Show/Hide</em> and <em>Stop</em> controls.
       </li>
+
       <li>
-        <strong>Run at Startup (<code>RECEIVE_BOOT_COMPLETED</code>):</strong>
-        Used solely to restore your active desktop companions after a device restart or app update if you left companions enabled.
+        <strong>Run at Startup
+        (<code>RECEIVE_BOOT_COMPLETED</code>):</strong>
+        Used solely to restore your active desktop companions after
+        a device restart or app update if you left companions enabled.
       </li>
     </ul>
 
     <h2>4. Data Sharing &amp; Third-Party Services</h2>
+
     <p>
-      Pets On Screen does not sell, rent, or share user data with third parties. If you choose to use the optional voice command feature, spoken audio is routed to your device's configured Android speech recognition provider in accordance with your device and system provider's privacy terms.
+      Pets On Screen does not sell, rent, or share user data with
+      third parties. If you choose to use the optional voice command
+      feature, spoken audio is routed to your device's configured
+      Android speech recognition provider in accordance with your
+      device and system provider's privacy terms.
     </p>
 
     <h2>5. Data Retention &amp; Your Controls</h2>
-    <p>You have full control over all locally stored app data:</p>
+
+    <p>You have control over all locally stored app data:</p>
+
     <ul>
-      <li><strong>Clear Command History:</strong> Tap <em>Clear</em> in Settings to delete saved command turns immediately.</li>
-      <li><strong>Delete Custom Pets:</strong> Open any imported pet's detail screen and tap the delete icon to permanently remove its extracted frames.</li>
-      <li><strong>Revoke Permissions:</strong> Disable <em>Display over other apps</em>, <em>Microphone</em>, or <em>Notifications</em> at any time in Android System Settings.</li>
-      <li><strong>Delete All Data:</strong> Uninstalling Pets On Screen permanently deletes all locally stored preferences and imported files.</li>
+      <li>
+        <strong>Clear Command History:</strong>
+        Tap <em>Clear</em> in Settings to delete saved command turns
+        immediately.
+      </li>
+
+      <li>
+        <strong>Delete Custom Pets:</strong>
+        Open any imported pet's detail screen and tap the delete icon
+        to permanently remove its extracted frames.
+      </li>
+
+      <li>
+        <strong>Revoke Permissions:</strong>
+        Disable <em>Display over other apps</em>,
+        <em>Microphone</em>, or <em>Notifications</em> at any time
+        in Android System Settings.
+      </li>
+
+      <li>
+        <strong>Delete All Data:</strong>
+        Uninstalling Pets On Screen permanently deletes all locally
+        stored preferences and imported files.
+      </li>
     </ul>
 
     <h2>6. Children's Privacy</h2>
+
     <p>
-      Pets On Screen does not knowingly collect personal information from children under the age of 13 (or the minimum age required in your jurisdiction). Because the app operates offline without user accounts or server-side data collection, no personal data is collected from users of any age.
+      Pets On Screen does not knowingly collect personal information
+      from children under the age of 13 (or the minimum age required
+      in your jurisdiction). Because the app operates locally without
+      user accounts or server-side data collection, no personal data
+      is collected from users of any age.
     </p>
 
     <h2>7. Changes to This Privacy Policy</h2>
+
     <p>
-      We may update this Privacy Policy from time to time to reflect app updates or legal requirements. Any changes will be posted on this page with an updated effective date.
+      We may update this Privacy Policy from time to time to reflect
+      app updates or legal requirements. Any changes will be posted
+      on this page with an updated effective date.
     </p>
 
     <h2>8. Contact Us</h2>
+
     <p>
-      If you have any questions or concerns about this Privacy Policy or Pets On Screen, please contact:
+      If you have any questions or concerns about this Privacy Policy
+      or Pets On Screen, please contact:
     </p>
+
     <p>
-      Email: <a href="mailto:achiverachiver2006@gmail.com">kbalajikbalaji879@gmail.com</a>
+      Email:
+      <a href="mailto:achiverachiver2006@gmail.com">
+        achiverachiver2006@gmail.com
+      </a>
     </p>
   </main>
 
   <footer>
-    &copy; 2026 Pets On Screen (com.petsonscreen.app). All rights reserved.
+    &copy; 2026 Pets On Screen. All rights reserved.
   </footer>
 </body>
 </html>
